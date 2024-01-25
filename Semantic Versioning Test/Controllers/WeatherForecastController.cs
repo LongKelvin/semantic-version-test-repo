@@ -6,10 +6,12 @@ namespace Semantic_Versioning_Test.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        private static readonly string[] Summaries =
+        [
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching",
+            "Frosty", "Breezy", "Crisp", "Pleasant", "Gentle", "Moderate", "Pleasantly Warm", "Sizzling", "Blistering", "Roasting"
+        ];
+
 
         private readonly ILogger<WeatherForecastController> _logger;
 
