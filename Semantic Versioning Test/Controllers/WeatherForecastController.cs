@@ -1,3 +1,5 @@
+using System.Text.Json;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace Semantic_Versioning_Test.Controllers
@@ -6,13 +8,6 @@ namespace Semantic_Versioning_Test.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries =
-        [
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching",
-            "Frosty", "Breezy", "Crisp", "Pleasant", "Gentle", "Moderate", "Pleasantly Warm", "Sizzling", "Blistering", "Roasting"
-        ];
-
-
         private readonly ILogger<WeatherForecastController> _logger;
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
@@ -21,16 +16,16 @@ namespace Semantic_Versioning_Test.Controllers
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        public IEnumerable<WeatherForecast>? Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)],
-                Location = "VietNam"
-            })
-            .ToArray();
+            // Read JSON data from file
+            using StreamReader reader = new("weather_forecast.json");
+            var json = reader.ReadToEnd();
+
+            // Deserialize JSON data into a list of WeatherForecast objects
+            WeatherForecast[] forecasts = JsonSerializer.Deserialize<WeatherForecast[]>(json)!;
+
+            return forecasts?.ToArray();
         }
     }
 }
