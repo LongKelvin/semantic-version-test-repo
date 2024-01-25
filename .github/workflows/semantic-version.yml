@@ -1,0 +1,30 @@
+name: CI/CD with Semantic Versioning
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  release:
+    runs-on: [self-hosted]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Semantic Versioning
+        id: semantic
+        uses: paulhatch/semantic-version@v5.3.0
+        with:
+          major_pattern: "(BREAKING)"
+          minor_pattern: "(FEATURE)"
+          version_format: "${major}.${minor}.${patch}"
+          change_path: "src"
+
+      - name: Tag and Release
+        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
+        run: |
+          git tag -a v${{ steps.semantic.outputs.version }} -m "Release ${{ steps.semantic.outputs.version }}"
+          git push origin v${{ steps.semantic.outputs.version }}
