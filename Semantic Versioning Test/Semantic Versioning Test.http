@@ -1,0 +1,6 @@
+@Semantic_Versioning_Test_HostAddress = http://localhost:5196
+
+GET {{Semantic_Versioning_Test_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
