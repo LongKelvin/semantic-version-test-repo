@@ -3,6 +3,7 @@ namespace Semantic_Versioning_Test
     public class WeatherForecast
     {
         public string? Location { get; set; }
+
         public DateOnly Date { get; set; }
 
         public int TemperatureC { get; set; }
