@@ -1,0 +1,159 @@
+[
+  {
+    "Date": "2024-01-25",
+    "TemperatureC": 33,
+    "Summary": "Warm",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-01-26",
+    "TemperatureC": 14,
+    "Summary": "Mild",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-01-27",
+    "TemperatureC": 6,
+    "Summary": "Bracing",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-01-28",
+    "TemperatureC": 40,
+    "Summary": "Balmy",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-01-29",
+    "TemperatureC": 9,
+    "Summary": "Chilly",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-01-30",
+    "TemperatureC": 50,
+    "Summary": "Sweltering",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-01-31",
+    "TemperatureC": 44,
+    "Summary": "Cool",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-01",
+    "TemperatureC": -10,
+    "Summary": "Freezing",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-02",
+    "TemperatureC": 8,
+    "Summary": "Bracing",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-03",
+    "TemperatureC": 53,
+    "Summary": "Scorching",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-04",
+    "TemperatureC": 35,
+    "Summary": "Warm",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-05",
+    "TemperatureC": 21,
+    "Summary": "Cool",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-06",
+    "TemperatureC": -2,
+    "Summary": "Freezing",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-07",
+    "TemperatureC": 43,
+    "Summary": "Warm",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-08",
+    "TemperatureC": 35,
+    "Summary": "Warm",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-09",
+    "TemperatureC": -14,
+    "Summary": "Freezing",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-10",
+    "TemperatureC": 38,
+    "Summary": "Warm",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-11",
+    "TemperatureC": 32,
+    "Summary": "Warm",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-12",
+    "TemperatureC": 17,
+    "Summary": "Mild",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-13",
+    "TemperatureC": -15,
+    "Summary": "Freezing",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-14",
+    "TemperatureC": 19,
+    "Summary": "Cool",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-15",
+    "TemperatureC": 48,
+    "Summary": "Warm",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-16",
+    "TemperatureC": 38,
+    "Summary": "Warm",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-17",
+    "TemperatureC": 18,
+    "Summary": "Cool",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-18",
+    "TemperatureC": 36,
+    "Summary": "Warm",
+    "Location": "VietNam"
+  },
+  {
+    "Date": "2024-02-19",
+    "TemperatureC": 25,
+    "Summary": "Cool",
+    "Location": "VietNam"
+  }
+
+]
