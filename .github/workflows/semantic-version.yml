@@ -18,10 +18,9 @@ jobs:
         id: semantic
         uses: paulhatch/semantic-version@v5.3.0
         with:
-          major_pattern: "[BREAKING]"
-          minor_pattern: "[FEATURE]"
+          major_pattern: "(MAJOR)"
+          minor_pattern: "(MINOR)"
           version_format: "${major}.${minor}.${patch}"
-          change_path: "src"
 
       - name: Tag and Release
         if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'master'
