@@ -41,7 +41,7 @@ namespace Semantic_Versioning_Test.Controllers
         public List<WeatherForecast> GetByKey(string key)
         {
             if (string.IsNullOrEmpty(key))
-                return _data!.ToList();
+                return [.. _data!];
 
             var queryResult = _data!.Where(x => x.Summary!.ToLower()!.Contains(key, StringComparison.CurrentCultureIgnoreCase) ||
             x.Location!.ToLower()!.Contains(key, StringComparison.CurrentCultureIgnoreCase)).ToList();
