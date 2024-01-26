@@ -28,14 +28,7 @@ namespace Semantic_Versioning_Test.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast>? Get()
         {
-            // Read JSON data from file
-            using StreamReader reader = new("weather_forecast.json");
-            var json = reader.ReadToEnd();
-
-            // Deserialize JSON data into a list of WeatherForecast objects
-            WeatherForecast[] forecasts = JsonSerializer.Deserialize<WeatherForecast[]>(json)!;
-
-            return forecasts?.ToArray();
+            return [.. _data!];
         }
 
         [HttpGet("ByKey", Name = "GetWeatherForecastByKey")]
