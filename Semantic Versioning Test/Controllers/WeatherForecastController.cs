@@ -2,6 +2,8 @@ using System.Text.Json;
 
 using Microsoft.AspNetCore.Mvc;
 
+using Semantic_Versioning_Test.Models;
+
 namespace Semantic_Versioning_Test.Controllers
 {
     [ApiController]
@@ -20,7 +22,6 @@ namespace Semantic_Versioning_Test.Controllers
 
             // Deserialize JSON data into a list of WeatherForecast objects
             var forecasts = JsonSerializer.Deserialize<WeatherForecast[]>(json)!;
-
             _data = forecasts ?? [];
         }
 

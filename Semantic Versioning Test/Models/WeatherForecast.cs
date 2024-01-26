@@ -1,4 +1,4 @@
-namespace Semantic_Versioning_Test
+namespace Semantic_Versioning_Test.Models
 {
     public class WeatherForecast
     {
